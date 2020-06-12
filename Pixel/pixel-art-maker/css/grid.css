@@ -1,0 +1,38 @@
+
+ 
+ .wrapper {
+    /* border: 2px solid #f76707; */
+    /* border-radius: 5px; */
+    /* background-color: #fff4e6; */
+    width: fit-content;
+    height: fit-content;
+    padding: 1%;
+    margin: 10%;
+    background-color: lightgrey;
+    border-radius: 10px;
+}
+
+.wrapper > div {
+    border: .5px solid ;
+    background-color: #fff;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(32, 25px);
+  grid-template-rows: repeat(32, 25px);
+  grid-gap: 0;
+  grid-auto-rows: 16;
+  
+
+}
+
+div{
+    height: 25px;
+    width: 25px;
+    border-width: .25 px ;
+    border-color: lightgray;
+    border-style: solid;
+    margin: 0;
+    padding:  0 0;
+    
+}
