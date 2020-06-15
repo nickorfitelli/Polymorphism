@@ -21,11 +21,26 @@ function changeColor(id) {
         {
        item.addEventListener('click', event => 
        {
-         item.style.backgroundColor = "red";
+        var selected = document.getElementById("selected");
+         item.style.backgroundColor = selected.style.backgroundColor;
        })
-     })
+     })    
+}
+
+var createPaint = function(){
     
+    document.querySelectorAll("div.paint").forEach(i =>
+   {
+       i.addEventListener('click', event =>
+       {
+        var selected = document.getElementById("selected");
+           console.log(selected.style.backgroundColor);
+           selected.style.backgroundColor = i.id;
+       })
+   })
 }
 
 createGrid();
+window.addEventListener('load', createPaint)
+
 
